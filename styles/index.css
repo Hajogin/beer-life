@@ -35,14 +35,14 @@ body {
     color: #FF8D14;
 }
 .logo-background {
-    margin-left: 168px;
-    margin-top: -582px;
-    margin-bottom: 500px;
     width: 335px;
     height: 77px;
     background: rgba(42, 42, 42, 1);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-    border: 0px solid rgba(255, 255, 255, 1);
+    border: 0 solid rgba(255, 255, 255, 1);
+    float: left;
+    margin-top: 20px;
+    margin-left: -20px;
 }
 .logo {
     width: 49px;
@@ -67,7 +67,7 @@ body {
     color: #ffffff;
 }
 .conteiner {
-    width: 980px;
+    max-width: 980px;
     min-height: 100%;
     margin: 0 auto 20px;
 }
@@ -146,8 +146,6 @@ body {
     width: 100%;
 }
 .foreground {
-    position: absolute;
-    width: 100%;
     margin-top: -50px;
 }
 .foreground .header {
@@ -155,7 +153,7 @@ body {
 }
 
 .content {
-    width: 980px;
+    max-width: 980px;
     margin: 0 auto;
 }
 
@@ -176,7 +174,7 @@ body {
 }
 .share {
     width: 175px;
-    margin-left: 790px;
+    /*margin-left: 790px;*/
     text-align: right;
 
 }
