@@ -1,0 +1,82 @@
+.logo-background {
+    margin-left: 168px;
+    margin-top: -557px;
+}
+.conteiner {
+    background: rgba(85, 85, 85, 0.85);
+    width: 980px;
+    min-height: 500px;
+}
+.feedback-text {
+    width: 670px;
+    height: 86px;
+    padding-top: 106px;
+    padding-left: 35px;
+    color: white;
+    font-family: Impact;
+    font-size: 70px;
+}
+.feedback-info {
+    width: 280px;
+    height: 202px;
+    float: left;
+    clear: both;
+}
+.feedback-info h2 {
+    color: white;
+    font-family: Arial;
+    font-size: 20px;
+    padding-left: 35px;
+    padding-top: 10px;
+}
+.feedback-info p {
+    color: white;
+    font-family: Arial;
+    font-size: 17px;
+    padding-left: 35px;
+    padding-top: 5px;
+}
+.feedback {
+    width: 680px;
+    height: 194px;
+    margin-left: 290px;
+    margin-top: 35px;
+}
+.feedback li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+input[type="text"] {
+    font-size: 14px;
+    height: 33px;
+    width: 290px;
+    margin-bottom: 5px;
+    background-color: rgba(42, 42, 42, 1);
+    border: 0px solid rgba(255, 255, 255, 1);
+    color: white;
+    padding-left: 10px;
+
+}
+textarea {
+    font-size: 14px;
+    width: 290px;
+    height: 148px;
+    background-color: rgba(42, 42, 42, 1);
+    border: 0px solid rgba(255, 255, 255, 1);
+    color: #ffffff;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.submit-1 {
+    text-align: right;
+    margin-right: 44px;
+    margin-top: -30px;
+}
+.submit-color {
+    background-color: rgba(42, 42, 42, 1);
+    border: 0px solid rgba(255, 255, 255, 1);
+    color: darkgray;
+    width: 85px;
+    height: 30px;
+}

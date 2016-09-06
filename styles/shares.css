@@ -1,0 +1,36 @@
+.logo-background {
+    margin-left: 168px;
+    margin-top: -1927px;
+    margin-bottom: 1850px;
+}
+.conteiner {
+    margin: 0px auto 20px;
+}
+.background-shares {
+    width: 980px;
+    min-height: 1870px;
+    margin: 0px auto 10px;
+    background: rgba(85, 85, 85, 0.85)
+}
+.background-shares .logo-shares img {
+    margin-top: 85px;
+    margin-left: 38px;
+
+}
+.text-shares {
+    width: 757px;
+    text-align: left;
+    margin-left: 220px;
+}
+.text-shares h2 {
+    color: #EAD027;
+    margin-top: -130px;
+    font-family: "Arial Black";
+    font-size: 26px;
+    margin-left: -38px;
+}
+.text-shares p {
+    color: white;
+    font-family: Arial;
+    margin-left: -38px;
+}

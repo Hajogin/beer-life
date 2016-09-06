@@ -1,0 +1,92 @@
+.logo-background {
+    margin-left: 168px;
+    margin-top: -1207px;
+    margin-bottom: 1130px;
+}
+.conteiner {
+    height: 1150px;
+    margin: 0 auto 10px;
+    background: rgba(85, 85, 85, 0.85)
+}
+.conteiner-header {
+    padding-top: 55px;
+    padding-left: 35px;
+}
+.conteiner-header h2 {
+    color: #ffffff;
+    font-family: Impact;
+    font-size: 70px;
+}
+.maps {
+    margin: -40px 40px 5px ;
+}
+.line {
+    border-bottom: 2px dotted white;
+    margin: 10px 35px 10px;
+}
+
+.box-1 {
+    width: 263px;
+    height: auto;
+    font-family: Impact;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 20px;
+    margin-left: 20px;
+    float: left;
+
+}
+
+.box-2 {
+    width: 253px;
+    float: left;
+}
+.box-2 li {
+    list-style: none;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 14px;
+
+}
+.box-2 li:nth-child(odd) {
+    width: 253px;
+    height: 54px;
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+}
+.box-2 li:nth-child(odd):hover {
+    background-color: rgba(42, 42, 42, 0.35);
+    border-radius: 5px;
+}
+.box-2 li:nth-child(even) {
+    border-bottom: 2px dotted white;
+    width: 210px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.box-foto {
+    width: 60px;
+    height: 45px;
+    background-image: url("../images/icons/sots-seti/photo.png");
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 150px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.box-img {
+    position:absolute;
+    left: 60px;
+    bottom:0;
+    right:0;
+    top:0;
+    padding:5px;
+    display:none;
+}
+.box-foto:hover .box-img {
+    display: block;
+}
