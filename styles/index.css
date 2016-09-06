@@ -174,9 +174,7 @@ body {
 }
 .share {
     width: 175px;
-    /*margin-left: 790px;*/
-    text-align: right;
-
+    margin-left: auto;
 }
 .social {
     display: inline-block;
