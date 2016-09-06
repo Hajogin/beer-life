@@ -11,6 +11,7 @@ body {
 .wraper {
     min-height: 100%;
 }
+
 .header li {
     display: inline-block;
     text-align: center;
@@ -41,8 +42,10 @@ body {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
     border: 0 solid rgba(255, 255, 255, 1);
     float: left;
-    margin-top: 20px;
-    margin-left: -20px;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    z-index: 1;
 }
 .logo {
     width: 49px;
@@ -159,6 +162,7 @@ body {
 
 .content .header {
     color: white;
+    position: relative;
 }
 
 .content .header ul {

@@ -1,12 +1,19 @@
-.conteiner {
+.container {
     max-width: 980px;
     height: 510px;
     margin: 15px auto 20px;
-    background: url("../images/shares/1.jpg");
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
     border: 0px solid rgba(255, 255, 255, 1);
+    overflow: hidden;
+    position: relative;
 }
-.conteiner a {
+.container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.container a {
     background-color: rgba(249, 255, 246, 0.73);
     line-height: 73px;
     font-family: Impact;
@@ -17,7 +24,9 @@
     padding: 0 5px;
     color: #2A2A2A;
 }
-.conteiner .baner-text {
-
+.container .baner-text {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
     padding-top: 400px;
 }

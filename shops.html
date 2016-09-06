@@ -30,8 +30,7 @@
             <h2>Магазины</h2>
         </div>
         <div class="maps">
-            <div class="map"> <a class="dg-widget-link" href="http://2gis.ru/ekaterinburg/profiles/1267165676977410,70000001020906356,1267166676413398,1267166676220287,70000001018385927/center/60.594406127929695,56.815914217130164/zoom/12?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Екатеринбурга</a><script charset="utf-8" src="http://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":904,"height":400,"borderColor":"#a3a3a3","pos":{"lat":56.815914217130164,"lon":60.594406127929695,"zoom":12},"opt":{"city":"ekaterinburg"},"org":[{"id":"1267165676977410"},{"id":"70000001020906356"},{"id":"1267166676413398"},{"id":"1267166676220287"},{"id":"70000001018385927"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
-            </div>
+            <div id="map-container" class="map"></div>
         </div>
         <div class="line"></div>
         <div class="box">
@@ -41,7 +40,7 @@
                 магазины Beerlife!<br><br><br>
             </div>
             <div class="box-2">
-                    <li>ул. Уральских рабочих, 51 (Уралмаш)<br>
+                    <li onclick="show_marker(0)">ул. Уральских рабочих, 51 (Уралмаш)<br>
                         +7 (912) 64 00 800
                     </li>
                     <li></li>
@@ -65,7 +64,7 @@
         <div class="box-3">
             <div class="box-foto">
                 <div class="box-img">
-                    <img src="images/shops/Уралмаш-1.jpg">
+                    <!--<img src="images/shops/Уралмаш-1.jpg">-->
                 </div>
             </div>
             <div class="box-foto">
@@ -73,12 +72,12 @@
             </div>
             <div class="box-foto">
                 <div class="box-img">
-                    <img src="images/shops/Селькоровская.jpg">
+                    <!--<img src="images/shops/Селькоровская.jpg">-->
                 </div>
             </div>
             <div class="box-foto">
                 <div class="box-img">
-                    <img src="images/shops/Белинка.jpg">
+                    <!--<img src="images/shops/Белинка.jpg">-->
                 </div>
             </div>
             <div class="box-foto">
@@ -146,5 +145,8 @@
     </div>
 
 </div>
+
+<script charset="utf-8" src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+<script src="scripts/map.js"></script>
 </body>
 </html>
