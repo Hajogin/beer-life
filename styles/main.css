@@ -11,11 +11,13 @@
     line-height: 73px;
     font-family: Impact;
     font-size: 50px;
-    padding: 5px 112px 5px 3px;
-    margin-left: 600px;
+    display: block;
+    float: right;
+    min-width: 390px;
+    padding: 0 5px;
     color: #2A2A2A;
 }
 .conteiner .baner-text {
-    margin-left: 0px;
+
     padding-top: 400px;
 }
