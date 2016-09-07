@@ -1,6 +1,6 @@
 var image_count = 9;
 var interval = 3000;
-var time_out = 10;
+var time_out = 4;
 var i = 0;
 var timeout;
 var opacity = 100;
