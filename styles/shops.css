@@ -15,17 +15,14 @@
 .maps {
     margin: -40px 40px 5px ;
 }
-
 .map {
     width: 904px;
     height: 400px;
 }
-
 .line {
     border-bottom: 2px dotted white;
     margin: 10px 35px 10px;
 }
-
 .box-1 {
     width: 263px;
     height: auto;
@@ -35,9 +32,7 @@
     padding: 20px;
     margin-left: 20px;
     float: left;
-
 }
-
 .box-2 {
     width: 253px;
     float: left;
@@ -47,7 +42,6 @@
     color: #ffffff;
     font-family: Arial;
     font-size: 14px;
-
 }
 .box-2 li:nth-child(odd) {
     width: 253px;
@@ -67,38 +61,41 @@
     margin-top: 5px;
     margin-left: 10px;
 }
-
 .box-foto {
     width: 60px;
     height: 45px;
-    background-image: url("../images/icons/sots-seti/photo.png");
     float: left;
     margin-left: 20px;
     margin-top: 10px;
     margin-right: 150px;
     margin-bottom: 30px;
 }
-
-
-
-
-
-#parent_popup {
-    background: #000;
-    height: 100%;
-    opacity: 0.9;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    top: 0;
-    left: 0;
+.blokimg {
+    position: relative;
 }
-#popup {
-    text-align: right;
-    position: fixed;
-    top: 5px;
-    left: 195px;
-    color: #ffffff;
-    width: 960px;
-    height: 720px;
+.overlay{
+    display: none;
+    height: auto;
+    position: absolute;
+    top: -200px;
+    left: -585px;
+    width: auto;
+    z-index: 999;
 }
+.overlay .overlay_container{
+    display: table-cell;
+    vertical-align: middle;
+}
+.overlay_container img{
+    background-color: #FF8D14;
+    padding: 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.overlay:target {
+    display: table;
+}
+
+
+
+

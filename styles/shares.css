@@ -1,7 +1,7 @@
 
 .background-shares {
     width: 980px;
-    height: 2090px;
+    height: auto;
     margin: 0px auto 10px;
     background: rgba(85, 85, 85, 0.85)
 }
