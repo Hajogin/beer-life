@@ -1,27 +1,45 @@
-$(document).ready(function() { // Ждём загрузки страницы
+document.addEventListener('DOMContentLoaded', function(){
+    var wrapper = document.querySelector('#slides'),
+        slider = wrapper.querySelector('ul'),
+        slides = wrapper.querySelectorAll('li'),
+        wrapper_width = wrapper.offsetWidth,
+        move_timer,
+        animation_delay = 4000,
+        animation_duration = 2000,
+        animation_step_delay = 20,
+        animation_step_count = animation_duration / animation_step_delay;
 
-    var slides = $(".slider .slides").children(".slide"); // Получаем массив всех слайдов
-    var width = $(".slider .slides").width(); // Получаем ширину видимой области
-    var i = slides.length; // Получаем количество слайдов
-    var offset = i * width; // Задаем начальное смещение и ширину всех слайдов
-    i--; // уменьшаем кол-во слайдов на один ( для проверки в будущем )
+    setInterval(next, animation_delay);
 
-    $(".slider .slides").css('width',offset); // Задаем блоку со слайдами ширину всех слайдов
+    slider.style.width = (wrapper_width * slides.length) + 'px';
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.width = wrapper_width + 'px';
+    }
 
-    offset = 0; // Обнуляем смещение, так как показывается начала 1 слайд
-    $(".container .slider .next").click(function(){	// Событие клика на кнопку "следующий слайд"
-        if (offset < width * i) {	// Проверяем, дошли ли мы до конца
-            offset += width; // Увеличиваем смещение до следующего слайда
-            $(".slider .slides").css("transform","translate3d(-"+offset+"px, 0px, 0px)"); // Смещаем блок со слайдами к следующему
+    function on_slide_start() {
+    }
+
+    function on_slide_end() {
+    }
+
+    function move() {
+        var current = slides[0],
+            value = parseInt(current.style.marginLeft) || 0;
+
+        if (-wrapper_width > value) {
+            slider.appendChild(current);
+            current.style.marginLeft = '';
+            slides = wrapper.querySelectorAll('li');
+            clearInterval(move_timer);
+            on_slide_end();
+        } else {
+            value += -(wrapper_width/animation_step_count);
+            current.style.marginLeft = value + 'px';
         }
-    });
+    }
 
-
-    $(".container .slider .prev").click(function(){	// Событие клика на кнопку "предыдущий слайд"
-        if (offset > 0) { // Проверяем, дошли ли мы до конца
-            offset -= width; // Уменьшаем смещение до предыдущего слайда
-            $(".slider .slides").css("transform","translate3d(-"+offset+"px, 0px, 0px)"); // Смещаем блок со слайдами к предыдущему
-        }
-    });
-
+    function next() {
+        on_slide_start();
+        move_timer = setInterval(move, animation_step_delay);
+    }
 });

@@ -31,48 +31,24 @@
     padding-top: 400px;
 }
 
+#slides {
+    overflow: hidden;
+}
 
-.container .slider {
-    overflow:hidden; /* Скрываем всё что за блоком слайдера */
-    position:relative;
-    width: 980px;
+#slides ul {
     height: 510px;
-    margin: 0 auto;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    white-space: nowrap;
 }
 
-.container .slider .slides {
-    position:relative;
-    transition: 2s; /* Задаем время изменения блока, отвечает за плавную прокрутку */
+#slides li {
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+    float: left;
 }
-
-.container .slider .slides .slide {
-    float:left;
-    display:block;
-}
-
-.container .slider .slides .slide img{
-    width: 980px;
-    height: 510px;
-}
-
-.container .slider .next {
-    position:absolute;
-    height:50px;
-    width:50px;
-    right:0;
-    top:225px;
-    z-index:1;
-    cursor:pointer;
-}
-
-.container .slider .prev {
-    position:absolute;
-    height:50px;
-    width:50px;
-    left:0;
-    top:225px;
-    z-index:1;
-    cursor:pointer;
-}
-
-
