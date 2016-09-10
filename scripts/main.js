@@ -1,25 +1,45 @@
-var image_count = 9;
-var interval = 3000;
-var time_out = 2;
-var i = 0;
-var timeout;
-var opacity = 100;
+document.addEventListener('DOMContentLoaded', function(){
+    var wrapper = document.querySelector('#slides'),
+        slider = wrapper.querySelector('ul'),
+        slides = wrapper.querySelectorAll('li'),
+        wrapper_width = wrapper.offsetWidth,
+        move_timer,
+        animation_delay = 4000,
+        animation_duration = 2000,
+        animation_step_delay = 20,
+        animation_step_count = animation_duration / animation_step_delay;
 
-function change_image() {
-    opacity--;
-    var j = i + 1;
-    var current_image = 'img_' + i;
-    if (i == image_count) j = 1;
-    var next_image = 'img_' + j;
-    document.getElementById(current_image).style.opacity=opacity/100;
-    document.getElementById(current_image).style.filter='alpha(opacity='+opacity+')';
-    document.getElementById(next_image).style.opacity=(100-opacity)/100;
-    document.getElementById(next_image).style.filter='alpha(opacity='+(100-opacity)+')';
-    timeout = setTimeout("change_image()", time_out);
-    if (opacity==1) {
-        opacity = 100;
-        clearTimeout(timeout);
+    setInterval(next, animation_delay);
+
+    slider.style.width = (wrapper_width * slides.length) + 'px';
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.width = wrapper_width + 'px';
     }
-}
 
-setInterval (function() {i++; if (i>image_count) i=1; change_image();}, interval);
+    function on_slide_start() {
+    }
+
+    function on_slide_end() {
+    }
+
+    function move() {
+        var current = slides[0],
+            value = parseInt(current.style.marginLeft) || 0;
+
+        if (-wrapper_width > value) {
+            slider.appendChild(current);
+            current.style.marginLeft = '';
+            slides = wrapper.querySelectorAll('li');
+            clearInterval(move_timer);
+            on_slide_end();
+        } else {
+            value += -(wrapper_width/animation_step_count);
+            current.style.marginLeft = value + 'px';
+        }
+    }
+
+    function next() {
+        on_slide_start();
+        move_timer = setInterval(move, animation_step_delay);
+    }
+});

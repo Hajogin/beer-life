@@ -30,3 +30,25 @@
     right: 0;
     padding-top: 400px;
 }
+
+#slides {
+    overflow: hidden;
+}
+
+#slides ul {
+    height: 510px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+#slides li {
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+    float: left;
+}
