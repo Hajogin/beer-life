@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="images/icons/favicon.png" type="image/png">
     <link href="styles/index.css" rel="stylesheet">
     <link href="styles/feedback.css" rel="stylesheet">
+    <script src="/scripts/feedback.js"></script>
 </head>
 <body>
 <div class="wraper">
@@ -49,12 +50,13 @@
             </p>
         </div>
         <div class="feedback">
+            <span id="info"></span>
            <ul>
                <li>
                 <input type="text" name="name" placeholder="Имя"><br>
                 <input type="text" name="email" placeholder="E-mail"><br>
                 <input type="text" name="phone" placeholder="Телефон"><br>
-                <input type="text" name="tems" placeholder="Тема"><br>
+                <input type="text" name="subject" placeholder="Тема"><br>
                </li>
                <li>
                    <textarea name="message" placeholder="Сообщение" rows="5"></textarea>
@@ -62,7 +64,7 @@
            </ul>
         </div>
         <div class="submit-1">
-            <input type="submit" class="submit-color" value="Отправить">
+            <input type="submit" id="send" class="submit-color" value="Отправить">
         </div>
     </div>
     <div class="empty"></div>
