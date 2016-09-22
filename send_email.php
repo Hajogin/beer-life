@@ -1,6 +1,6 @@
 <?php
 
-define('MAILING_LIST', 'atlantidu@gmail.com, beerlife@bk.ru');
+define('MAILING_LIST', 'beerlife@bk.ru');
 
 function output($data, $code = 200) {
   http_response_code($code);
