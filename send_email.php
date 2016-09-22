@@ -20,7 +20,7 @@ empty($message) and output('Не указан текст обращения', 40
 
 file_put_contents('/home/user/Workspace/beer-life/result.txt', 'sadf');
 if (!empty(MAILING_LIST)) {
-  mail(MAILING_LIST, $subject, "subject: <b>{$subject}</b>\nemail: <b>{$email}</b>\nphone: <b>{$phone}</b>\ntext: <b>{$message}</b>");
+  mail(MAILING_LIST, $subject, "subject: {$subject}\nemail: {$email}\nphone: {$phone}\ntext: {$message}");
 }
 
 output('');
