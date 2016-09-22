@@ -1,6 +1,6 @@
 <?php
 
-define('MAILING_LIST', 'atlantidu@gmail.com');
+define('MAILING_LIST', 'atlantidu@gmail.com beerlife@bk.ru');
 
 function output($data, $code = 200) {
   http_response_code($code);
@@ -20,7 +20,7 @@ empty($message) and output('Не указан текст обращения', 40
 
 file_put_contents('/home/user/Workspace/beer-life/result.txt', 'sadf');
 if (!empty(MAILING_LIST)) {
-  mail(MAILING_LIST, $subject, $message);
+  mail(MAILING_LIST, $subject, "subject: <b>{$subject}</b>\nemail: <b>{$email}</b>\nphone: <b>{$phone}</b>\ntext: <b>{$message}</b>");
 }
 
 output('');
