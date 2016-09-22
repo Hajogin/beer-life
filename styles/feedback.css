@@ -42,7 +42,9 @@
     display: inline-block;
     vertical-align: top;
 }
-
+.feedback li:last-child {
+    margin-left: 81.5%;
+}
 input[type="text"] {
     font-size: 14px;
     height: 33px;
@@ -52,7 +54,6 @@ input[type="text"] {
     border: 0px solid rgba(255, 255, 255, 1);
     color: white;
     padding-left: 10px;
-
 }
 textarea {
     font-size: 14px;
@@ -63,11 +64,6 @@ textarea {
     color: #ffffff;
     padding-left: 10px;
     padding-top: 5px;
-}
-.submit-1 {
-    text-align: right;
-    margin-right: 44px;
-    margin-top: -30px;
 }
 .submit-color {
     background-color: rgba(42, 42, 42, 1);

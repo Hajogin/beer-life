@@ -4,14 +4,21 @@
     background: rgba(85, 85, 85, 0.85);
     margin: 0 auto 0;
 }
-.instagram-media {
-    /*background:#FFF;*/
-    margin: 0;
-    max-width:658px;
-    padding:0;
-    padding-top: 28px;
-    padding-left: 35px;
-    width:99.375%;
-    width:-webkit-calc(100% - 2px);
-    width:calc(100% - 2px);
+
+.instagram {
+    width: 712px;
+    height: 712px;
+    margin-left: 20px;
+    float: left;
+    padding-bottom: 40px;
+
+}
+.instagram-mini {
+    width: 220px;
+    height: 728px;
+    margin-left: auto;
+    margin-right: 20px;
+
+
+
 }

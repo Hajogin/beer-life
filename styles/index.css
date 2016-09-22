@@ -4,7 +4,7 @@ body, html {
 }
 body {
     margin: 0;
-    background-image: url("../images/background-1.png");
+    background-image: url("../images/background-1.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -131,6 +131,7 @@ body {
     height: 32px;
     text-align: center;
     padding-top: 10px;
+    margin-bottom: 30px;
 }
 .link a {
     text-decoration: none;
